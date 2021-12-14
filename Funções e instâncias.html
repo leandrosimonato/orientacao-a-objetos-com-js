@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Funções e instâncias.</title>
+</head>
+<body>
+	<script>
+		function pessoa() {
+			this.nome = 'Leandro';
+		}
+
+		var pessoa = new Pessoa();
+		var pessoa2 = new Pessoa();
+
+		pessoa.nome = 'Ana Carolina';
+		
+		alert(pessoa.nome);
+
+	</script>
+</body>
+</html>
