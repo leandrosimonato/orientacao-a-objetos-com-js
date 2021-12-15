@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Classes.</title>
+</head>
+<body>
+	<script>
+		class Animal {
+			constructor(nome) {
+				this.nome = nome;
+			}
+			printNome() {
+				return this.nome;
+			}
+		}
+		class Cachorro extends Animal {
+			constructor(nome) {
+				super(nome);
+				this.raca = 'Bulldog';
+			}
+			printRaca() {
+				return this.raca;
+			}
+		}
+		animal = new Animal('Pandora');
+		alert(animal.printNome());
+		alert(animal.printRaca());
+
+	</script>
+</body>
+</html>
