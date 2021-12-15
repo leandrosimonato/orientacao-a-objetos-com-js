@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Mais sobre datas com javascript.</title>
+</head>
+<body>
+	<script>
+		// Formato americano de data!
+		var date = new Date('12/15/2021');
+
+		//alert(date.getDate());
+
+		var date2 = new Date('11/11/2021');
+
+		var diferenca = (date2.getTime() - date.getTime()) / (1000 * 3600 * 24);
+		alert(diferenca);
+
+	</script>
+</body>
+</html>
