@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Revisando orientação a objetos e documentação.</title>
+</head>
+<body>
+	<script>
+		//https://developer.mozilla.org/pt-BR/docs/Aprender/JavaScript/Objetos/Object-oriented_JS
+	function createNewPerson(name) {
+  	var obj = {};
+  	obj.name = name;
+  	obj.greeting = function() {
+    	alert('Hi! I\'m ' + obj.name + '.');
+  	};
+  	return obj;
+	}
+	var salva = createNewPerson('Salva');
+	salva.name;
+	salva.greeting();
+
+	</script>
+</body>
+</html>
